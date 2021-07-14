@@ -154,7 +154,7 @@ main{
         Footer Top Section
 ----------------------------------*/
 .footer-top{
-    width: 1160px;
+    max-width: 1160px;
     display: flex;
     align-items: center;
     margin: auto;

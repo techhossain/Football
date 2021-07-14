@@ -98,11 +98,7 @@ Footer Top Section
 Feature Section
 ----------------------------------*/
 .art-banner {
-    background-color: rgb(0, 80, 112);
     height: 60vh;
-    display: grid;
-    grid-template-columns: 20px 1fr 1fr 1fr 20px;
-    grid-template-rows: 20px 1fr 1fr 1fr 20px;
   }
 
 /* -------------------------------
@@ -121,7 +117,7 @@ Footer Section
 
 }
 
-/* Medium devices (768px and up) */
+/* Medium devices (769px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px){
 
     nav {
@@ -153,5 +149,45 @@ Footer Section
         margin-top: 30px;;
         width: 329px;
     }
+    /* Player */
+    main{
+        padding: 25px;;
+        margin: 30px auto;
+    }
 
+    /* Footer Top */
+    .footer-top{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 25px;
+    }
+    .footer-content, 
+    .footer-img {
+        padding-right: 0;
+        padding-left: 0;
+        margin: 10px 0;
+    }
+
+    /* Gallery */
+    .gallery {
+        padding: 30px 25px;
+    }
+
+/* -------------------------------
+Feature Section
+----------------------------------*/
+.art-banner {
+    height: 60vh;
+  }
+
+}
+
+/* Medium devices (769px and up) */
+@media only screen and (min-width: 992px) {
+    .gallery, main, .footer-top, .hero, nav {
+        padding: 30px;
+    }
 }
