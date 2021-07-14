@@ -69,7 +69,7 @@ Footer Top Section
     .footer-top{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding: 15px;
         width: 100%;
     }
