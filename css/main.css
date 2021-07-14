@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Poppins:wght@400;500;700&display=swap');
-/* Custom Properties Declaration*/
+/* -------------------------------
+        Custom Properties Declaration 
+--------------------------------*/
 :root{
     --primary-color: #18191F;
     --secondary-color: #6C6C6C;
@@ -13,11 +14,12 @@
     --btn-transition: ;
     --btn-transform: ;
     --container-width: 1160px;
-    --footer-logo-font: 'Niconne', cursive;
     --title-font: 'Poppins', sans-serif;
     --color-white: #fff;
 }
-/* Global Styles */
+/* -------------------------------
+        Global Styles 
+--------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -58,7 +60,6 @@ h6{
 /* -------------------------------
         Navigation Menu Style
 ----------------------------------*/
-
 nav{
     background-color: var(--background-color);
     padding: 30px 0;
@@ -82,9 +83,8 @@ nav .wrapper-nav a{
 nav .wrapper-nav ul a:hover{
     background-color: #1e1781;
 }
-
 /* -------------------------------
-Hero area
+        Hero area
 ----------------------------------*/
 .hero{
     background: var(--background-color);
@@ -104,7 +104,6 @@ Hero area
 .hero-feature-img{
     padding-left: 51px;
 }
-
 .hero h1{
     font-size: 64px;
     color: var(--title-color);
@@ -123,9 +122,8 @@ Hero area
 .hero-img{
     width: 556px;
 }
-
 /* -------------------------------
-Player Section
+        Player Section
 ----------------------------------*/
 main{
     display: grid;
@@ -152,9 +150,8 @@ main{
     color: var(--secondary-color);
     font-size: 16px;
 }
-
 /* -------------------------------
-Footer Top Section
+        Footer Top Section
 ----------------------------------*/
 .footer-top{
     width: 1160px;
@@ -180,9 +177,8 @@ Footer Top Section
 .footer-img img{
     width: 567px;
 }
-
 /* -------------------------------
-Footer Section
+        Footer Section
 ----------------------------------*/
 footer{
     margin: 65px 0;
@@ -192,6 +188,9 @@ footer{
 }
 footer img{
     width: 483px;
+}
+.social-media{
+    margin: 15px 0;
 }
 footer .social{
     background: #6c6c6cc4;
@@ -210,8 +209,9 @@ i{margin: 0 6px;}
 .fa-twitter-square, .fa-instagram-square{
     padding: 5px 5px 5px 7px !important;
 }
-
-/* Gallery */
+/* -------------------------------
+        Gallery
+----------------------------------*/
 .gallery {
     padding: 50px 10px;
 }
@@ -247,17 +247,16 @@ i{margin: 0 6px;}
 .horizontal {
     grid-column: span 2;
 }
-
 .vertical {
     grid-row: span 2;
 }
-
 .big {
     grid-column: span 2;
     grid-row: span 2;
 }
-
-/* Feature Section */
+/* -------------------------------
+        Feature Section
+----------------------------------*/
 .art-banner {
     background-color: rgb(0, 80, 112);
     height: 100vh;
@@ -265,16 +264,13 @@ i{margin: 0 6px;}
     grid-template-columns: 20px 1fr 1fr 1fr 20px;
     grid-template-rows: 20px 1fr 1fr 1fr 20px;
   }
-  
   .art-banner-bg {
     opacity: 0.15;
-    background: url("../img/bg.jpg")
-      center center no-repeat;
+    background: url("../img/bg.jpg") center center no-repeat;
     background-size: cover;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
   }
-  
   .banner-text {
     color: #fff;
     font-size: 8vw;
@@ -284,41 +280,38 @@ i{margin: 0 6px;}
     align-self: center;
     justify-self: center;
   }
-  
   .badge {
     display: grid;
     align-self: center;
     justify-self: center;
     grid-column: 4 / 5;
     grid-row: 3 / 4;
-    background-color: rgb(255, 41, 123);
+    background-color: var(--btn-hover-bg-color);
     color: #fff;
     font-size: 2.5vw;
     font-weight: bold;
     width: 10vw;
     height: 10vw;
     border-radius: 50%;
-    transform: rotate(15deg);
+    transform: rotate(0deg);
   }
-  
   .badge p {
     margin: auto;
   }
-  
   .art-banner::before {
     content: "";
     opacity: 0.85;
-    border-top: 5px solid rgb(255, 41, 123);
-    border-right: 5px solid rgb(255, 41, 123);
+    border-top: 5px solid var(--btn-hover-bg-color);
+    border-right: 5px solid var(--btn-hover-bg-color);
     grid-column: 4;
-    grid-row: 2 / span 3;
+    grid-row: 2 / span 1;
   }
   
   .art-banner::after {
     content: "";
     opacity: 0.85;
-    border-bottom: 5px solid rgb(255, 41, 123);
-    border-left: 5px solid rgb(255, 41, 123);
+    border-bottom: 5px solid var(--btn-hover-bg-color);
+    border-left: 5px solid var(--btn-hover-bg-color);
     grid-column: 2;
     grid-row: 4;
   }

@@ -1,6 +1,9 @@
 
 /* Extra small devices (767px and down) */
 @media only screen and (max-width: 767px) {
+/* -------------------------------
+  Navigation Menu Section
+----------------------------------*/
     .hide{
         display: block;
         color: #fff;
@@ -15,7 +18,6 @@
         align-items: center;
         justify-content: space-between;
     }
-
     nav .wrapper-nav ul{
         display: none;
     }
@@ -27,8 +29,9 @@
         font-size: .9em;
         padding: 6px;
     }
-
-    /* Hero section */
+/* -------------------------------
+Hero section
+----------------------------------*/
     .hero {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -51,8 +54,9 @@
         margin-top: 30px;
     max-width: 100%;
     }
-
-/* player section */
+/* -------------------------------
+player section
+----------------------------------*/
     main {
         margin: 40px auto;
     }
@@ -90,8 +94,18 @@ Footer Top Section
         max-width: 100%;
         width: 100%;
     }
+/* -------------------------------
+Feature Section
+----------------------------------*/
+.art-banner {
+    background-color: rgb(0, 80, 112);
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr 1fr 20px;
+    grid-template-rows: 20px 1fr 1fr 1fr 20px;
+  }
 
-    /* -------------------------------
+/* -------------------------------
 Footer Section
 ----------------------------------*/
     footer{
@@ -139,15 +153,5 @@ Footer Section
         margin-top: 30px;;
         width: 329px;
     }
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (1200px and up) */
-@media only screen and (min-width: 1200px) {
 
 }
